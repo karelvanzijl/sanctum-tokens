@@ -1,7 +1,7 @@
 {
   "name": "sanctum-tokens",
-  "version": "2.0.1",
-  "repository": "github:JeffBeltran/sanctum-tokens",
+  "version": "1.0.0",
+  "repository": "github:karelvanzijl/sanctum-tokens",
   "private": true,
   "scripts": {
     "dev": "npm run development",

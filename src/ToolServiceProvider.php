@@ -1,6 +1,6 @@
 <?php
 
-namespace Jeffbeltran\SanctumTokens;
+namespace karelvanzijl\SanctumTokens;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;

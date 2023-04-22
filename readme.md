@@ -20,14 +20,14 @@ This package allows you to use [Sanctum](https://laravel.com/docs/7.x/sanctum) t
 ## Installation
 
 ```
-composer require jeffbeltran/sanctum-tokens
+composer require karelvanzijl/sanctum-tokens
 ```
 
 Register the plugin by adding `SanctumTokens::make()` to the array of fields in the Nova resource. Make sure the
 `HasApiTokens` trait from the Sanctum package has been added to your model.
 
 ```php
-use Jeffbeltran\SanctumTokens\SanctumTokens;
+use karelvanzijl\SanctumTokens\SanctumTokens;
 
 /**
  * Get the fields displayed by the resource.
@@ -53,7 +53,7 @@ public function fields(Request $request)
 You can hide the reference to the token abilities from the UI by calling the `hideAbilities()` method on the field.
 
 ```php
-use Jeffbeltran\SanctumTokens\SanctumTokens;
+use karelvanzijl\SanctumTokens\SanctumTokens;
 
 /**
  * Get the fields displayed by the resource.
@@ -79,7 +79,7 @@ If you don't want to use the default `*` token ability you can set your own by s
 This works well with the the `hideAbilities()` method if you want to hide the abilities logic from your users.
 
 ```php
-use Jeffbeltran\SanctumTokens\SanctumTokens;
+use karelvanzijl\SanctumTokens\SanctumTokens;
 
 /**
  * Get the fields displayed by the resource.
@@ -103,5 +103,5 @@ public function fields(Request $request)
 Publish the package language files to your application's `resources/lang/vendor` directory:
 
 ```
-php artisan vendor:publish --provider="Jeffbeltran\SanctumTokens\ToolServiceProvider"
+php artisan vendor:publish --provider="karelvanzijl\SanctumTokens\ToolServiceProvider"
 ```

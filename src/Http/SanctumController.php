@@ -1,8 +1,9 @@
 <?php
 
-namespace Jeffbeltran\SanctumTokens\Http;
+namespace karelvanzijl\SanctumTokens\Http;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Laravel\Nova\Nova;
 
 class SanctumController
@@ -25,6 +26,8 @@ class SanctumController
             ->toArray();
 
         $token = $user->createToken($request->name, $abilities);
+
+        Log::info($token);
 
         return $token->plainTextToken;
     }

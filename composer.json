@@ -1,5 +1,5 @@
 {
-  "name": "jeffbeltran/sanctum-tokens",
+  "name": "karelvanzijl/sanctum-tokens",
   "description": "A Laravel Nova resource tool for sanctum tokens.",
   "keywords": [
     "laravel",
@@ -13,13 +13,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Jeffbeltran\\SanctumTokens\\": "src/"
+      "karelvanzijl\\SanctumTokens\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Jeffbeltran\\SanctumTokens\\ToolServiceProvider"
+        "karelvanzijl\\SanctumTokens\\ToolServiceProvider"
       ]
     }
   },
