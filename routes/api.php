@@ -15,13 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get(
     "tokens/{resourceName}/{id}",
-    "\karelvanzijl\SanctumTokens\Http\SanctumController@tokens"
+    "\Karelvanzijl\SanctumTokens\Http\SanctumController@tokens"
 );
 Route::post(
     "tokens/{resourceName}/{id}",
-    "\karelvanzijl\SanctumTokens\Http\SanctumController@createToken"
+    "\Karelvanzijl\SanctumTokens\Http\SanctumController@createToken"
 );
 Route::post(
     "tokens/{resourceName}/{id}/revoke",
-    "\karelvanzijl\SanctumTokens\Http\SanctumController@revoke"
+    "\Karelvanzijl\SanctumTokens\Http\SanctumController@revoke"
 );

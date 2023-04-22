@@ -13,13 +13,13 @@
   },
   "autoload": {
     "psr-4": {
-      "karelvanzijl\\SanctumTokens\\": "src/"
+      "Karelvanzijl\\SanctumTokens\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "karelvanzijl\\SanctumTokens\\ToolServiceProvider"
+        "Karelvanzijl\\SanctumTokens\\ToolServiceProvider"
       ]
     }
   },

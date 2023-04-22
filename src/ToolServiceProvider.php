@@ -1,6 +1,6 @@
 <?php
 
-namespace karelvanzijl\SanctumTokens;
+namespace Karelvanzijl\SanctumTokens;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
@@ -26,6 +26,8 @@ class ToolServiceProvider extends ServiceProvider
         $this->app->booted(function () {
             $this->routes();
         });
+
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
 
         $this->publishes([
             __DIR__ . "/../resources/lang" => resource_path(

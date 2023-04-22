@@ -1,6 +1,6 @@
 <?php
 
-namespace karelvanzijl\SanctumTokens;
+namespace Karelvanzijl\SanctumTokens;
 
 use Laravel\Nova\ResourceTool;
 
